@@ -1,0 +1,90 @@
+.footer {
+  position: relative;
+  background-image: url("../assets/mobile/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $lightBlue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(77, 150, 169, 0.9);
+  }
+
+  @include breakpoint-up(medium) {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
+  @include breakpoint-up(large) {
+    background-image: url("../assets/desktop/image-footer.jpg");
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2.375rem;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      padding: 6rem 6.5rem 4.375rem 6.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      padding: 7.5rem 6.5rem 7.5rem 5.375rem;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    &-title {
+      color: #fff;
+      font-size: $fontMd2;
+      line-height: 2.25rem;
+      font-weight: map-get($fontWeights, "black");
+      margin-bottom: 2.25rem;
+      z-index: 1;
+
+      @include breakpoint-up(medium) {
+        font-size: $fontLg;
+        line-height: 2.75rem;
+        margin-bottom: 2.875rem;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 0rem;
+        margin-right: 9rem;
+        width: 25rem;
+      }
+    }
+
+    &-desc {
+      color: #fff;
+      font-size: $fontMd;
+      margin-bottom: 2.375rem;
+      z-index: 1;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 2.9375rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: 26rem;
+        margin-right: 6.4375rem;
+      }
+    }
+
+    .footer-btn {
+      background-color: $purple;
+      margin-right: 0rem;
+
+      span {
+        color: $lightPurple;
+      }
+    }
+  }
+}

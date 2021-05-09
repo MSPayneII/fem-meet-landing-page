@@ -1,0 +1,115 @@
+.content {
+  &__section-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.1875rem;
+
+    .vertLine {
+      height: 5.25rem;
+      border-left: 1px solid $lightGrey;
+    }
+
+    .number {
+      height: 3.5rem;
+      width: 3.5rem;
+      color: $grey;
+      background-color: $offWhite;
+      border: 1px solid $lightGrey;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 29px;
+      font-size: $fontSm;
+      font-weight: map-get($fontWeights, "black");
+      z-index: 1;
+    }
+  }
+
+  .section-number2 {
+    margin-bottom: -2rem;
+  }
+
+  .image-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.5625rem;
+    row-gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 4.4375rem;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 3.4375rem;
+      flex-wrap: nowrap;
+    }
+
+    @include breakpoint-up(large) {
+      margin-bottom: 5.4375rem;
+    }
+
+    .image {
+      border-radius: 17px;
+      height: 8.9375rem;
+      width: 9.4375rem;
+
+      @include breakpoint-up(medium) {
+        height: 9.75rem;
+        width: 10.25rem;
+      }
+
+      @include breakpoint-up(large) {
+        height: 15.125rem;
+        width: 15.9375rem;
+      }
+    }
+  }
+
+  .modern-use {
+    text-align: center;
+
+    &__overline {
+      font-size: $fontSm;
+      font-weight: map-get($fontWeights, "black");
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $teal;
+      margin-bottom: 2.1875rem;
+
+      @include breakpoint-up(medium) {
+        margin-bottom: 1.75rem;
+      }
+    }
+
+    &__title {
+      width: 20.4375rem;
+      font-size: $fontMd2;
+      font-weight: map-get($fontWeights, "black");
+      line-height: 2.25rem;
+      margin: 0 auto 2.875rem auto;
+
+      @include breakpoint-up(medium) {
+        font-size: $fontLg;
+        line-height: 2.75rem;
+        width: 27.8125rem;
+      }
+    }
+    &__desc {
+      color: $grey;
+      width: 20rem;
+      font-size: $fontSm;
+      margin: 0 auto 4.4375rem auto;
+
+      @include breakpoint-up(medium) {
+        width: 35.8125rem;
+        margin: 0 auto 5.4375rem auto;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $fontMd;
+        width: 32.75rem;
+        margin: 0 auto 4.9375rem auto;
+      }
+    }
+  }
+}
