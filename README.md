@@ -23,11 +23,7 @@ To build out this landing page and get it looking as close to the design as poss
 
 ### Screenshot
 
-<<<<<<< HEAD
-![Meet-Landing Page Laptop Preview](.dist/assets/meet-landing-page.png)
-=======
-![meet-landing.page.png](./screenshot.jpg)
->>>>>>> dabb3924663c1ca895542532a69de386a766a0d8
+![Meet-Landing Page Laptop Preview](./dist/assets/meet-landing-page.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
