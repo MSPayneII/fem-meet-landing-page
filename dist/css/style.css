@@ -241,7 +241,7 @@ body {
 
 @media (min-width: 87.5em) {
   .hero__image-right {
-    background-position: top 0 left 0;
+    background-position: top 0 left 2.5rem;
   }
 }
 
